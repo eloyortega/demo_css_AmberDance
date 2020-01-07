@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Amber Dance Company</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+		#about{
+			display: grid;
+			grid-template-columns: auto 50px 50px 350px 50px 223px 4px 273px auto;
+			grid-template-rows: 50px 100px 50px 356px 50px;
+			border-top:1px solid #f00;
+		}
+
+		#about .bgabout{
+			grid-row:1/-1;
+			grid-column: 4/-1;
+		}
+
+		#about .title{
+			grid-row:2/3;
+			grid-column: 2/-1;
+			color:#fff;
+		}
+
+		#about .splash{
+			grid-row:3/5;
+			grid-column: 3/6;
+			background: linear-gradient(45deg,
+					rgba(255, 255, 255, 1) 35px,
+					rgba(255, 255, 255, 0) 35px), url(assets/img/splash1.jpg);
+			background-size: cover;
+			background-position: center center;
+		}
+
+		#about .textcol1{
+			grid-row:4/5;
+			grid-column: 5/7;
+		}
+
+		#about .textcol2{
+			grid-row:4/5;
+			grid-column: 8/9;
+		}
+
+		.textcol1, .textcol2{
+			background: #fff;
+			padding:20px;
+		}
+		
+		#history{
+			display: grid;
+			grid-template-columns: auto 50px 248px 4px 198px 50px 450px auto;
+			grid-template-rows: 100px 100px 150px 300px 50px 100px;
+		}
+		
+		#history .title{
+			grid-row: 2/3;
+			grid-column: 2/-1;
+		}
+		
+		#history .textcol1{
+			grid-row: 4/5;
+			grid-column: 3/4;
+			border-left:1px solid #000;
+		}
+
+		#history .textcol2{
+			grid-row: 4/5;
+			grid-column: 5/7;
+		}
+
+		#history .splash{
+			grid-row: 3/6;
+			grid-column: 6/8;
+			background: linear-gradient(45deg,
+					rgba(255, 255, 255, 1) 35px,
+					rgba(255, 255, 255, 0) 35px), url(assets/img/splash2.jpg);
+			background-size:  auto 100%;
+			background-position: center center;
+		}
+		
+		
+		@media screen and (max-width:950px) {
+
+			#about,
+			#history {
+				display: block;
+				margin-left: 20px;
+				border:none;
+			}
+			.splash{
+				height:50vh;
+				width:100%;
+				margin-bottom:50px;
+/*				float:left;*/
+			}
+			#history .textcol1{
+				border:none;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+			<a href="index.html" id="logo">Amber Dance<br><span>Company</span></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+		<div id="social">
+			<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+			<a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+			<a href="https://www.youtube.com" class="fa fa-youtube-play" target="_blank"></a>
+		</div>
+	</header>
+	<section id="about">
+		<div class="redbox bgabout"></div>
+		<div class="title blkbox">
+			<h2>About Us</h2>
+		</div>
+		<div class="splash">
+<!--			<img src="assets/img/splash1.jpg">-->
+		</div>
+		<div class="textcol1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+		</div>
+		<div class="textcol2">
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+		</div>
+	</section>
+	<section id="history">
+		<div class="title redbox">
+			<h2>History</h2>
+		</div>
+				<div class="splash">
+<!--			<img src="assets/img/splash2.jpg">-->
+		</div>
+				<div class="textcol1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
+		</div>
+		<div class="textcol2">
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.</p>
+		</div>
+
+	</section>
+	<footer>
+		<div id="companyinfo">
+			<h3>Amber Dance Company</h3>
+			<p>122 West Street,<br>
+				New York, NY 10004<br>
+				<a href="mailto:info@amberdance.com">info@amberdance.com</a>
+			</p>
+		</div>
+		<div id="copyright">
+			<p>&copy; 2020 Amber Dance Company All Rights Reserved.</p>
+			<p><a href="index.html">Home</a> &bull; <a href="about.html">About</a> &bull; <a href="contact.html">Contact</a></p>
+		</div>
+		<div id="footersocial">
+			<h3>Follow Us:</h3>
+			<p><a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+			<a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+			<a href="https://www.youtube.com" class="fa fa-youtube-play" target="_blank"></a></p>
+		</div>
+	</footer>
+</body>
+</html>

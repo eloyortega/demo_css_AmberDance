@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Yanone+Kaffeesatz&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+p {
+	letter-spacing: .065em;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.redbox {
+	background: linear-gradient(45deg,
+			rgba(255, 0, 0, 0) 35px,
+			rgba(255, 0, 0, 1) 35px);
+}
+
+.blkbox {
+	background: linear-gradient(45deg,
+			rgba(0, 0, 0, 0) 35px,
+			rgba(0, 0, 0, 1) 35px);
+}
+
+.title {
+	padding: 30px 50px;
+	text-transform: uppercase;
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+@keyframes btnhover {
+	0% {
+		background: none;
+		color: #fff;
+		transform: scale(1, 1);
+	}
+
+	100% {
+		background: #fff;
+		color: #f00;
+		transform: scale(1.2, 1.2);
+	}
+}
+
+.btn:hover {
+	background: #fff;
+	color: #f00;
+	transform: scale(1.2, 1.2);
+	animation: btnhover .125s linear 1;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 260px auto 260px;
+}
+
+#logo {
+	display: inline-block;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-decoration: none;
+	color: #f00;
+	text-transform: uppercase;
+	line-height: 28px;
+	font-size: 30px;
+	padding: 25px 25px 15px;
+	letter-spacing: 8px;
+	text-align: center;
+}
+
+#logo span {
+	text-transform: lowercase;
+	font-size: 16px;
+	letter-spacing: 11px;
+	border-top: 1px solid #000;
+	text-align: center;
+	padding-left: 8px;
+	padding-top: 3px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	padding-top: 30px;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	width: 100px;
+	margin: 3px 10px 0;
+	color: #000;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+@keyframes navhover {
+	0% {
+		border-top: 0px solid #000;
+		margin-top: 3px;
+		color: #000;
+	}
+
+	100% {
+		border-top: 3px solid #f00;
+		margin-top: 0px;
+		color: #f00;
+	}
+}
+
+nav a:hover {
+	border-top: 3px solid #f00;
+	margin-top: 0px;
+	color: #f00;
+	animation: navhover .125s linear 1;
+}
+
+#social {
+	text-align: right;
+	padding-right: 25px;
+}
+
+#social a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: 25px;
+	padding-top: 10px;
+	padding-left: 1px;
+}
+
+#social a:hover {
+	background: #f00;
+}
+
+footer {
+	background: url(../img/footer.jpg);
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: top center;
+	display: grid;
+	grid-template-columns: 300px auto 300px;
+}
+
+footer div {
+	padding: 50px;
+	color: #fff;
+}
+
+footer a {
+	text-decoration: none;
+	color: #f00;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+#companyinfo p,
+#footersocial p {
+	margin-bottom: 0;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#footersocial {
+	text-align: center;
+}
+
+footer h3 {
+	text-transform: uppercase;
+}
+
+#footersocial a {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	font-size: 25px;
+	padding-top: 12px;
+	padding-left: 2px;
+	display: inline-block;
+	margin: 20px 0 0 10px;
+}
+
+#footersocial a:hover {
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+@media screen and (max-width:950px) {
+
+	h2 {
+		font-size: 30px;
+	}
+
+	header {
+		grid-template-columns: 245px auto;
+	}
+
+	header div:first-child {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	#logo {
+		padding-right: 10px;
+	}
+
+	nav {
+		grid-column: 1/-1;
+		grid-row: 2/3;
+	}
+
+	#social {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		padding-right: 10px;
+	}
+
+	nav ul {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-top: 1px solid #f00;
+	}
+
+	#social a {
+		font-size: 20px;
+		margin-left: 5px;
+		margin-top: 40px;
+		width: 30px;
+		height: 30px;
+		padding-top: 5px;
+	}
+
+	footer {
+		display: block;
+		text-align: center;
+		background-size: cover;
+	}
+
+	footer div {
+		padding: 20px;
+	}
+
+	#footersocial {
+		padding-bottom: 20px;
+	}
+
+	section {
+		margin-bottom: 50px;
+	}
+
+/*
+	.topic {
+		margin-left: 50px;
+	}
+*/
+	
+	.title.blkbox{
+		background: linear-gradient(135deg,
+			rgba(0, 0, 0, 0) 35px,
+			rgba(0, 0, 0, 1) 35px);
+	}
+	.title.redbox{
+		background: linear-gradient(135deg,
+			rgba(255, 0, 0, 0) 35px,
+			rgba(255, 0, 0, 1) 35px);
+	}
+
+}
