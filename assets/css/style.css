@@ -303,21 +303,15 @@ footer h3 {
 		margin-bottom: 50px;
 	}
 
-/*
-	.topic {
-		margin-left: 50px;
-	}
-*/
-	
-	.title.blkbox{
+	.title.blkbox {
 		background: linear-gradient(135deg,
-			rgba(0, 0, 0, 0) 35px,
-			rgba(0, 0, 0, 1) 35px);
-	}
-	.title.redbox{
-		background: linear-gradient(135deg,
-			rgba(255, 0, 0, 0) 35px,
-			rgba(255, 0, 0, 1) 35px);
+				rgba(0, 0, 0, 0) 35px,
+				rgba(0, 0, 0, 1) 35px);
 	}
 
+	.title.redbox {
+		background: linear-gradient(135deg,
+				rgba(255, 0, 0, 0) 35px,
+				rgba(255, 0, 0, 1) 35px);
+	}
 }
